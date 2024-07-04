@@ -1,8 +1,11 @@
+/* СТИЛИ ДЛЯ ШАПКИ*/
+
 .header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     padding: 92px 24px 96px;
+    max-width: 1052px;
 }
 
 .header__menu{
@@ -57,4 +60,88 @@
 	border-bottom: 1px solid;
 }
 
+/* СТИЛИ ДЛЯ АУКЦИОНА*/
 
+.cover{
+    padding: 165px 50px 51px 50px;
+	margin-bottom: 179px;
+    background-image: url(../images/cover.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    inset: 0;
+}
+
+.cover__title{
+    position: relative;
+    z-index:2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    position: relative;
+    line-height: 100px;
+    color: #FFF;
+}
+
+.aligned-text{
+    display: block;
+    line-height: 115px;
+}
+
+.aligned-text_center{
+    text-align: center;
+}
+
+.aligned-text_right{
+    text-align: right;
+}
+
+.letter-spacing-extended {
+	letter-spacing: 0.6em;
+}
+
+.no-letter-spacing{
+    letter-spacing: initial;
+}
+
+.cover__description{
+    margin-top: 147px;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    z-index:2;
+}
+
+.cover__description-text{
+    margin-right: 79px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #FFF;
+    word-spacing:16px;
+}
+
+.bet-button{
+    font-family: Raleway;
+    padding: 12px 32px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25.83px;
+    text-align: center;
+    border: 1px solid #FFF;
+    color: #FFF;
+    text-transform: uppercase;
+    background-color: transparent;
+}
