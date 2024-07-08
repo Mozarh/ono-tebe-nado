@@ -1,20 +1,17 @@
 /* СТИЛИ ДЛЯ ШАПКИ*/
 
 .header {
+    width: 100%;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 92px 24px 96px;
-    max-width: 1052px;
-}
-
-.header__menu {
-    justify-self: start;
+    padding: 92px 50px 96px;
 }
 
 .header__links-list {
     display: flex;
-    gap: 24px;
+    gap: 32px;
     min-width: 392px;
 }
 
@@ -36,13 +33,18 @@
 }
 
 .header__link_active {
-    border-bottom: 0px;
+    border-bottom: 0;
 }
 
 .header__logo {
     display: block;
     justify-self: center;
-    width: 148px;
+    align-self: center;
+    width: 130px;
+}
+
+.header__logo-image {
+    width: 100%;
 }
 
 .address {
@@ -65,10 +67,7 @@
 .cover {
     padding: 165px 50px 51px 50px;
     margin-bottom: 179px;
-    background-image: url(../images/cover.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: url(../images/cover.jpg) no-repeat center / cover;
     position: relative;
 }
 
@@ -89,22 +88,22 @@
     font-weight: 700;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    position: relative;
-    line-height: 100px;
+    line-height: 1.15;
     color: #FFF;
 }
 
 .aligned-text {
     display: block;
-    line-height: 115px;
 }
 
 .aligned-text_center {
     text-align: center;
+    line-height: 1;
 }
 
 .aligned-text_right {
     text-align: right;
+    line-height: 1;
 }
 
 .letter-spacing-extended {
@@ -112,25 +111,26 @@
 }
 
 .no-letter-spacing {
-    letter-spacing: initial;
+    letter-spacing: normal;
 }
 
 .cover__description {
-    margin-top: 147px;
     position: relative;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 78px;
+    padding: 136px 0 0;
     z-index: 2;
 }
 
 .cover__description-text {
-    margin-right: 79px;
     font-weight: 400;
     font-size: 22px;
-    line-height: 28px;
+    line-height: 1.27;
     text-transform: uppercase;
     color: #FFF;
-    word-spacing: 16px;
+    word-spacing: 18px;
 }
 
 .bet-button {
@@ -147,7 +147,7 @@
 
 /* СТИЛИ ДЛЯ ЛОТОВ*/
 .lots {
-    padding: 0px 24px 146px;
+    padding: 0 24px 146px;
 }
 
 .lots__heading {
@@ -240,7 +240,7 @@
 /* СТИЛИ ДЛЯ аукционов*/
 
 .about {
-    padding: 0px 24px;
+    padding: 0 24px;
     display: grid;
     grid-template-columns: 334px 1fr;
     gap: 25px;
@@ -281,14 +281,10 @@
     line-height: 24px;
 }
 
-.about_1p {
-    margin-right: 5px;
-}
-
 /* СТИЛИ ДЛЯ подвала*/
 
 .footer {
-    margin: 180px 50px 88px;
+    padding: 180px 50px 88px;
     display: flex;
     justify-content: space-between;
 }
@@ -316,7 +312,7 @@
 }
 
 .footer__menu-link_active {
-    border-bottom: 0px;
+    border-bottom: 0;
 }
 
 .footer__social-list {
